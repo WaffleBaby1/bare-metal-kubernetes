@@ -1,2 +1,10 @@
+name: Ansible-install
 
-  
+on: pull_request
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 
+        run: echo This is the first step of my first job.
