@@ -1,9 +1,11 @@
 name: Ansible-install
 
-on: pull_request
+on: status
 
 jobs:
-  job1:
+  if_success:
     runs-on: ubuntu-20.04
+    if: >-
+      github.event.state == 'success'
     steps:
-      - run: echo This is the first step of my first job.
+      - run: echo This is a test
