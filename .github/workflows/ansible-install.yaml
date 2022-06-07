@@ -6,5 +6,4 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: 
-        run: echo This is the first step of my first job.
+      - run: echo This is the first step of my first job.
